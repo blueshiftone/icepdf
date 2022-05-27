@@ -1268,7 +1268,7 @@ public class PopupAnnotationComponent extends AbstractAnnotationComponent<PopupA
         @Override
         public String toString() {
             final MarkupAnnotation annot = (MarkupAnnotation) userObject;
-            return annot.getTitleText() + " - " + annot.getContents();
+            return annot != null ? annot.getTitleText() + " - " + annot.getContents() : "";
         }
 
         @Override
